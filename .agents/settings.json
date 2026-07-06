@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-developer-knowledge": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/google-developer-knowledge-mcp"]
+    }
+  }
+}
