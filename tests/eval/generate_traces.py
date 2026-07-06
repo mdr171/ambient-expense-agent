@@ -16,7 +16,7 @@ async def run_scenario(case):
         if ex_name == "RequestInput":
             events.append({"type": "RequestInput", "prompt": getattr(e, "prompt", "Please provide input")})
             
-            decision = "terima" if "injection" not in case["id"] else "tolak"
+            decision = "approve" if "injection" not in case["id"] else "reject"
             
             try:
                 async for resume_event in workflow.run(ctx=ctx, node_input=decision):
