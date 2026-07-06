@@ -7,11 +7,8 @@ from google.adk.events import RequestInput, Event, EventActions
 from google.adk.workflow import Workflow, node
 from google.adk.agents.context import Context
 from google.adk.agents.llm_agent import LlmAgent
-from google.genai import Client
 
 from .config import MODEL_NAME, AUTO_APPROVE_THRESHOLD
-
-client = Client(api_key="AIzaSyD-mock-key-value-12345")  # Simulated vulnerability
 
 class ExpenseData(BaseModel):
     amount: float
