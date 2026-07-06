@@ -1,0 +1,5 @@
+version: "1.0"
+name: "ambient-expense-agent"
+agent_type: "adk"
+entrypoint: "expense_agent.agent:root_agent"
+agent_directory: "expense_agent"
